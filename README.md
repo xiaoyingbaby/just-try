@@ -1,2 +1,2 @@
 # countdown
-[倒计时](https://github.com/xiaoyingbaby/just-try/countdown.html)
+[倒计时](https://xiaoyingbaby.github.io/just-try/countdown.html)
