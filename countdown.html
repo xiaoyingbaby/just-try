@@ -10,11 +10,11 @@
         }
         .content{
             position: absolute;
-            width: 340px;
+            width: 800px;
             height: 100px;
             top: 50%;
             left: 50%;
-            margin: -50px 0 0 -170px;
+            margin: -50px 0 0 -400px;
             font-size: 50px;
             line-height: 100px;
             color: #333;
@@ -28,7 +28,7 @@
 <body>
 <div class="box">
     <div class="content">
-        倒计时：<span id="time"></span>天
+        双十一倒计时：<span id="time"></span>天<span id="time_h"></span>时<span id="time_m"></span>分<span id="time_s"></span>秒
     </div>
 </div>
 
@@ -54,6 +54,9 @@ function show_time(){
 // 显示时间
     
     document.getElementById("time").innerHTML = o(int_day)
+    document.getElementById("time_h").innerHTML = o(int_hour)
+    document.getElementById("time_m").innerHTML = o(int_minute)
+    document.getElementById("time_s").innerHTML = o(int_second )
     
 // 设置定时器
     setTimeout("show_time()",1000);
